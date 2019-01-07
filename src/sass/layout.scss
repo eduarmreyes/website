@@ -1,0 +1,14 @@
+@import 'tailwind';
+
+body,
+html {
+  @apply font-sans text-black;
+}
+
+a.link {
+  @apply no-underline text-teal;
+
+  &:hover {
+    @apply text-teal-dark;
+  }
+}
