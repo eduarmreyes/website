@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby TailwindCSS Starter',
+    title: 'Eduardo Mejía Website',
     author: 'Eduardo Mejía',
     handle: '@eduarmreyes',
   },
@@ -38,11 +38,12 @@ module.exports = {
         background_color: '#4dc0b5',
         theme_color: '#4dc0b5',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/me-logo.jpg', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-resolve-src',
   ],
 }

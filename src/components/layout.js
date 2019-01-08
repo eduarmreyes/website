@@ -22,14 +22,14 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.author}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Eduardo Mejía Website' },
+            { name: 'keywords', content: 'eduardo, mejía, eduardo mejía, front end, el salvador' },
           ]}
         >
           <html lang="en" />
         </Helmet>
         <Header author={data.site.siteMetadata.author} />
-        <div className="container mx-auto py-8">{children}</div>
+        {children}
       </>
     )}
   />

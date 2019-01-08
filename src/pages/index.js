@@ -1,9 +1,10 @@
 import React from 'react'
-import Image from '../components/image'
 import Layout from '../components/layout'
+import AboutMe from '../components/about-me'
 
 const IndexPage = () => (
   <Layout>
+    <AboutMe />
     <h1 className="mb-4">Hi everyone</h1>
     <p className="leading-loose">This is going to be my landing, changes coming up.</p>
     <p className="leading-loose">Built upon great technologies</p>
@@ -18,12 +19,6 @@ const IndexPage = () => (
         NodeJS
       </li>
     </ul>
-    <figure className="pt-4 m-0" style={{ maxWidth: '300px' }}>
-      <Image />
-      <figcaption className="pt-2">
-        This is me, chilling in a town in El Salvador.
-      </figcaption>
-    </figure>
   </Layout>
 )
 
