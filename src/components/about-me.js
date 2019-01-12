@@ -13,19 +13,17 @@ const AboutMe = ({ author, from, cta_text }) => (
           </figcaption>
         </figure>
       </div>
-      <div className="my-information w-1/2 md:w-full pt-4">
-        <h4 className="mb-4">
+      <div className="my-information w-1/2 md:w-full pt-4 mt-4">
+        <h4 className="mb-4 leading-normal">
           Hi, I'm Eduardo Mejía, Front End Developer from El Salvador, living in the US.
         </h4>
-        <p className="mb-4">
+        <p className="mb-4 leading-normal">
+          I am from <a href="https://elsalvador.travel/en/" target="_blank" rel="noopener noreferrer">El Salvador</a>. A nice country with a lot of good things in a tiny amount of earth.
+        </p>
+        <p className="mb-4 leading-normal">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, porro voluptas illo aspernatur fugit laboriosam rerum impedit? Neque sequi nemo deserunt temporibus harum quam, nobis cum explicabo omnis vel ipsum!
         </p>
-        <p className="mb-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, porro voluptas illo aspernatur fugit laboriosam rerum impedit? Neque sequi nemo deserunt temporibus harum quam, nobis cum explicabo omnis vel ipsum!
-        </p>
-        <button className="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded">
-          Hire Me
-        </button>
+        <a href="mailto:eduar.mreyes@gmail.com" className="no-underline"><span role="img" aria-label="email emoji">📧</span> Send me an email</a>
       </div>
     </div>
   </section>
