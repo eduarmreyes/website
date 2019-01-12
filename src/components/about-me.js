@@ -3,7 +3,7 @@ import Image from '../components/image'
 import PropTypes from 'prop-types'
 
 const AboutMe = ({ author, from, cta_text }) => (
-  <section className="container mx-auto py-8">
+  <section className="container mx-auto py-8 px-6">
     <div className="md:flex justify-center">
       <div className="my-photo w-full md:w-1/2">
         <figure className="pt-4 m-0" style={{ maxWidth: '300px' }}>
