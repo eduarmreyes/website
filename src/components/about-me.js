@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 const AboutMe = ({ author, from, cta_text }) => (
   <section className="container mx-auto py-8">
-    <div className="flex justify-center">
-      <div className="my-photo w-1/2 md:w-full">
+    <div className="md:flex justify-center">
+      <div className="my-photo w-full md:w-1/2">
         <figure className="pt-4 m-0" style={{ maxWidth: '300px' }}>
           <Image />
           <figcaption className="pt-2">
@@ -13,7 +13,7 @@ const AboutMe = ({ author, from, cta_text }) => (
           </figcaption>
         </figure>
       </div>
-      <div className="my-information w-1/2 md:w-full pt-4 mt-4">
+      <div className="my-information w-full md:w-1/2 pt-4 mt-4">
         <h4 className="mb-4 leading-normal">
           Hi, I'm Eduardo Mejía, Front End Developer from El Salvador, living in the US.
         </h4>
