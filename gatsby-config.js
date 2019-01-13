@@ -15,7 +15,7 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
-        develop: true, // Enable while using `gatsby develop`
+        develop: false, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
       }
     },
@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatsby TailwindCSS + SASS Starter',
-        short_name: 'gatstail',
+        name: 'Eduardo Mejía Website',
+        short_name: 'eduarmreyes_website',
         start_url: '/',
         background_color: '#4dc0b5',
         theme_color: '#4dc0b5',
