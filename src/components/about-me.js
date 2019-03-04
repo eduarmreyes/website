@@ -26,7 +26,12 @@ const AboutMe = ({ author, from, cta_text }) => (
         <p className="mb-4 leading-normal">
           Fun fact about me, I am a former shortstop baseball player, I even played representing my country for a couple of years, wonderful, amazing, fill with beautiful memories.
         </p>
-        <a href="mailto:eduar.mreyes@gmail.com" className="no-underline"><span role="img" aria-label="email emoji">📧</span> Send me an email</a>
+        <p className="mb-2">
+          <a href="https://twitter.com/eduarmreyes" className="no-underline"><span role="img" aria-label="bird emoji">🐦</span> Find me on Twitter</a>
+        </p>
+        <p className="mb-2">
+          <a href="mailto:eduar.mreyes@gmail.com" className="no-underline"><span role="img" aria-label="email emoji">📧</span> Send me an email</a>
+        </p>
       </div>
     </div>
   </section>
