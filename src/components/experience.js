@@ -30,7 +30,7 @@ const Experience = () => (
           </p>
         </div>
         <div class="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
-        <h2 className="mt-6 mb-6">
+          <h2 className="mt-6 mb-6">
             EDUCATION
           </h2>
           <h3 className="mb-4">
@@ -54,6 +54,9 @@ const Experience = () => (
           </p>
         </div>
       </div>
+      <code className="ml-2 text-blue-lightest">
+        Photo by Oswaldo Martinez on Unsplash
+      </code>
     </div>
   </section>
 )
