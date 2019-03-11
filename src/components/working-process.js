@@ -10,8 +10,8 @@ const WorkingProcess = ({ author, from, cta_text }) => (
       <h3 className="text-grey-darker text-center mt-6 mb-6">
         As a Front End developer, the way I craft out great websites is as follows
       </h3>
-      <div class="block sm:flex">
-        <div class="flex-1 text-grey-darker text-center bg-teal-dark px-6 py-6 m-2">
+      <div className="block sm:flex">
+        <div className="flex-1 text-grey-darker text-center bg-teal-dark px-6 py-6 m-2">
           <span role="img" aria-label="artist palette emoji">
             🎨
           </span>
@@ -19,7 +19,7 @@ const WorkingProcess = ({ author, from, cta_text }) => (
             Design
           </p>
         </div>
-        <div class="flex-1 text-grey-darker text-center bg-blue-dark px-6 py-6 m-2">
+        <div className="flex-1 text-grey-darker text-center bg-blue-dark px-6 py-6 m-2">
           <span role="img" aria-label="laptop computer emoji">
             💻
           </span>
@@ -27,7 +27,7 @@ const WorkingProcess = ({ author, from, cta_text }) => (
             Development
           </p>
         </div>
-        <div class="flex-1 text-grey-darker text-center bg-indigo-dark px-6 py-6 m-2">
+        <div className="flex-1 text-grey-darker text-center bg-indigo-dark px-6 py-6 m-2">
           <span role="img" aria-label="computer emoji">
             📊
           </span>
@@ -35,7 +35,7 @@ const WorkingProcess = ({ author, from, cta_text }) => (
             Testing
           </p>
         </div>
-        <div class="flex-1 text-grey-darker text-center bg-pink-dark px-6 py-6 m-2">
+        <div className="flex-1 text-grey-darker text-center bg-pink-dark px-6 py-6 m-2">
           <span role="img" aria-label="computer emoji">
             🚀
           </span>

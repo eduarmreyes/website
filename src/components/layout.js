@@ -6,6 +6,8 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import '../sass/layout.scss'
 
+// document.addEventListener('touchstart', onTouchStart, {passive: true});
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`

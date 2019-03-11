@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 const Experience = () => (
   <section className="bg-blue-lightest bg-el-salvador">
     <div className="container mx-auto py-8 px-6">
-      <div class="block md:flex">
-        <div class="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
+      <div className="block md:flex">
+        <div className="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
           <h2 className="mt-6 mb-6">
             WORK EXPERIENCE
           </h2>
@@ -29,7 +29,7 @@ const Experience = () => (
             In charge of the Front End development of TechLatam's web-based projects such as websites and dashboards. Responsible for <strong>top-notch web development</strong> based on beautiful designs.
           </p>
         </div>
-        <div class="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
+        <div className="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
           <h2 className="mt-6 mb-6">
             EDUCATION
           </h2>
