@@ -9,7 +9,7 @@ const Experience = () => (
           <h2 className="mt-6 mb-6">
             WORK EXPERIENCE
           </h2>
-          <h3 className="mb-4">
+          <h3 className="mb-2">
             AgilityFeat, Inc.
           </h3>
           <h4 className="mb-4">
@@ -19,7 +19,7 @@ const Experience = () => (
             Part of the team that created <a className="text-white" href="https://usabili.me">https://usabili.me</a>. In charge of most of the Front End development of the product. Development was based on agile methodology.
           </p>
           <hr className="border border-solid border-blue-lightest mb-4"></hr>
-          <h3 className="mb-4">
+          <h3 className="mb-2">
             TechLatam
           </h3>
           <h4 className="mb-4">
@@ -33,7 +33,7 @@ const Experience = () => (
           <h2 className="mt-6 mb-6">
             EDUCATION
           </h2>
-          <h3 className="mb-4">
+          <h3 className="mb-2">
             UEES - B.S. Systems Engineering
           </h3>
           <h4 className="mb-4">
@@ -43,7 +43,7 @@ const Experience = () => (
             The most important part of my education is understand that what I learned in the university will be obsolete pretty fast and that we need to continue our education everyday.
           </p>
           <hr className="border border-solid border-blue-lightest mb-4"></hr>
-          <h3 className="mb-4">
+          <h3 className="mb-2">
             ITCA - Associated on Systems Engineering
           </h3>
           <h4 className="mb-4">
