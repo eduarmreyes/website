@@ -2,45 +2,55 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Experience = () => (
-  <section className="bg-grey-lightest">
+  <section className="bg-blue-lightest bg-el-salvador">
     <div className="container mx-auto py-8 px-6">
-      <h1 className="text-center">
-        My Experience
-      </h1>
-      <h3 className="text-grey-darker text-center mt-6 mb-6">
-        As a Front End developer, the way I craft out great websites is as follows
-      </h3>
       <div class="flex">
-        <div class="flex-1 text-grey-darker text-center bg-teal-dark px-6 py-6 m-2">
-          <span role="img" aria-label="artist palette emoji">
-            🎨
-          </span>
-          <p className="mt-4 text-teal-lightest">
-            Design
+        <div class="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
+          <h2 className="mt-6 mb-6">
+            WORK EXPERIENCE
+          </h2>
+          <h3 className="mb-4">
+            AgilityFeat, Inc.
+          </h3>
+          <h4 className="mb-4">
+            FEB '16 - SEP '17 & SEP'18 - <i>CURRENT</i>
+          </h4>
+          <p className="mb-4">
+            Part of the team that created <a className="text-white" href="https://usabili.me">https://usabili.me</a>. In charge of most of the Front End development of the product. Development was based on agile methodology.
+          </p>
+          <hr className="border border-solid border-blue-lightest mb-4"></hr>
+          <h3 className="mb-4">
+            TechLatam
+          </h3>
+          <h4 className="mb-4">
+            Sep '17 - Sep '18
+          </h4>
+          <p className="mb-4">
+            In charge of the Front End development of TechLatam's web-based projects such as websites and dashboards. Responsible for <strong>top-notch web development</strong> based on beautiful designs.
           </p>
         </div>
-        <div class="flex-1 text-grey-darker text-center bg-blue-dark px-6 py-6 m-2">
-          <span role="img" aria-label="laptop computer emoji">
-            💻
-          </span>
-          <p className="mt-4 text-blue-lightest">
-            Development
+        <div class="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
+        <h2 className="mt-6 mb-6">
+            EDUCATION
+          </h2>
+          <h3 className="mb-4">
+            UEES - B.S. Systems Engineering
+          </h3>
+          <h4 className="mb-4">
+            '13 - '18
+          </h4>
+          <p className="mb-4">
+            The most important part of my education is understand that what I learned in the university will be obsolete pretty fast and that we need to continue our education everyday.
           </p>
-        </div>
-        <div class="flex-1 text-grey-darker text-center bg-indigo-dark px-6 py-6 m-2">
-          <span role="img" aria-label="computer emoji">
-            📊
-          </span>
-          <p className="mt-4 text-indigo-lightest">
-            Testing
-          </p>
-        </div>
-        <div class="flex-1 text-grey-darker text-center bg-pink-dark px-6 py-6 m-2">
-          <span role="img" aria-label="computer emoji">
-            🚀
-          </span>
-          <p className="mt-4 text-pink-lightest">
-            Launch
+          <hr className="border border-solid border-blue-lightest mb-4"></hr>
+          <h3 className="mb-4">
+            ITCA - Associated on Systems Engineering
+          </h3>
+          <h4 className="mb-4">
+            '10 - '11
+          </h4>
+          <p className="mb-4">
+            Started my web development career, it was crazy, we designed our websites using <code>tables</code> crazy days.
           </p>
         </div>
       </div>
