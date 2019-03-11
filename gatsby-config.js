@@ -35,8 +35,8 @@ module.exports = {
         name: 'Eduardo Mejía Website',
         short_name: 'eduarmreyes_website',
         start_url: '/',
-        background_color: '#4dc0b5',
-        theme_color: '#4dc0b5',
+        background_color: '#2779bd',
+        theme_color: '#2779bd',
         display: 'minimal-ui',
         icon: 'src/images/me-logo.jpg', // This path is relative to the root of the site.
       },

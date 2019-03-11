@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 const Experience = () => (
   <section className="bg-blue-lightest bg-el-salvador">
     <div className="container mx-auto py-8 px-6">
-      <div class="flex">
+      <div class="block md:flex">
         <div class="flex-1 text-blue-lightest bg-blue-transparent px-6 py-6 m-2">
           <h2 className="mt-6 mb-6">
             WORK EXPERIENCE
