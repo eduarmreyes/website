@@ -34,8 +34,6 @@ exports.createPages = ({ graphql, actions }) => {
           return Promise.reject(result.errors);
         }
 
-        debugger;
-
         result.data.blog.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/blog.js');
           createPage({
