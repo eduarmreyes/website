@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Eduardo Mejía Website',
+    title: '@eduarmreyes - Personal Website',
     author: 'Eduardo Mejía',
     handle: '@eduarmreyes',
   },

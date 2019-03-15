@@ -14,6 +14,7 @@ const Layout = ({ children }) => (
       query AuthorQuery {
         site {
           siteMetadata {
+            title
             author
           }
         }
@@ -22,7 +23,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Helmet
-          title={data.site.siteMetadata.author}
+          title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Eduardo Mejía Website' },
             { name: 'keywords', content: 'eduardo, mejía, eduardo mejía, front end, el salvador' },
