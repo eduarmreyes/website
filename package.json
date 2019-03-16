@@ -39,7 +39,8 @@
     "start": "gatsby serve --port ${PORT}"
   },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "eslint": "^5.15.1",
+    "prettier": "^1.16.4"
   },
   "repository": {
     "type": "git",
