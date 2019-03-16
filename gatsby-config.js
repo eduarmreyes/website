@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Eduardo Mejía Website',
+    title: '@eduarmreyes - Personal Website',
     author: 'Eduardo Mejía',
     handle: '@eduarmreyes',
   },
@@ -58,5 +58,27 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+        name: "data",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: "images",
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
