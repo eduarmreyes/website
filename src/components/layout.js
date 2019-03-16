@@ -26,7 +26,10 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Eduardo Mejía Website' },
-            { name: 'keywords', content: 'eduardo, mejía, eduardo mejía, front end, el salvador' },
+            {
+              name: 'keywords',
+              content: 'eduardo, mejía, eduardo mejía, front end, el salvador',
+            },
           ]}
         >
           <html lang="en" />

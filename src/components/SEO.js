@@ -1,13 +1,13 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
-import favicon from '../images/me-logo.jpg';
+import React from 'react'
+import Helmet from 'react-helmet'
+import { StaticQuery, graphql } from 'gatsby'
+import favicon from '../images/me-logo.jpg'
 
 const SEO = props => (
   <StaticQuery
     query={detailsQuery}
-    render={(data) => {
-      const title = props.title || data.site.siteMetadata.title;
+    render={data => {
+      const title = props.title || data.site.siteMetadata.title
       return (
         <Helmet
           htmlAttributes={{
@@ -19,18 +19,18 @@ const SEO = props => (
             { rel: 'shortcut icon', type: 'image/jpg', href: `${favicon}` },
           ]}
         />
-      );
+      )
     }}
   />
-);
+)
 
 SEO.defaultProps = {
   lang: 'en',
   meta: [],
   keywords: [],
-};
+}
 
-export default SEO;
+export default SEO
 
 const detailsQuery = graphql`
   query DefaultSEOQuery {
@@ -40,4 +40,4 @@ const detailsQuery = graphql`
       }
     }
   }
-`;
+`

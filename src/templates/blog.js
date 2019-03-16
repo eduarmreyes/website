@@ -1,11 +1,11 @@
-import React from 'react';
-import { graphql } from 'gatsby';
-import SEO from '../components/SEO';
-import Layout from '../layouts/index';
+import React from 'react'
+import { graphql } from 'gatsby'
+import SEO from '../components/SEO'
+import Layout from '../layouts/index'
 
 const Blog = ({ data }) => {
-  const { title } = data.markdownRemark.frontmatter;
-  const { html } = data.markdownRemark;
+  const { title } = data.markdownRemark.frontmatter
+  const { html } = data.markdownRemark
   return (
     <Layout bodyClass="page-service">
       <SEO title={title} />
@@ -15,15 +15,18 @@ const Blog = ({ data }) => {
             <div className="col-12 col-md-8">
               <div className="service service-single">
                 <h1 className="title">{title}</h1>
-                <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{ __html: html }}
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </Layout>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($id: String!) {
@@ -35,6 +38,6 @@ export const query = graphql`
       html
     }
   }
-`;
+`
 
-export default Blog;
+export default Blog

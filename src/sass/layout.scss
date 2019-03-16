@@ -14,19 +14,24 @@ a.link {
 }
 
 .bg-el-salvador {
-  background-image:
-    radial-gradient(circle, transparent 40%, hsla(100%, 100%, 100%, 0.5) 75%),
-    linear-gradient(to right, hsla(343, 100%, 50%, .5), hsla(343, 100%, 50%, .5)),
-  url(../images/oswaldo-martinez-1230143-unsplash.jpg);
+  background-image: radial-gradient(
+      circle,
+      transparent 40%,
+      hsla(100%, 100%, 100%, 0.5) 75%
+    ),
+    linear-gradient(
+      to right,
+      hsla(343, 100%, 50%, 0.5),
+      hsla(343, 100%, 50%, 0.5)
+    ),
+    url(../images/oswaldo-martinez-1230143-unsplash.jpg);
   // height: 90vh;
   background-size: cover;
   background-position: center center;
-  background-blend-mode: 
-    var(--blend-top, normal),
-    var(--blend-bottom, saturation),
-    normal;
+  background-blend-mode: var(--blend-top, normal),
+    var(--blend-bottom, saturation), normal;
 }
 
 .bg-blue-transparent {
-  background-color: rgba(39, 120, 190, 0.20);
+  background-color: rgba(39, 120, 190, 0.2);
 }
