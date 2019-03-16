@@ -1,6 +1,6 @@
 import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+// import Helmet from 'react-helmet'
+// import { StaticQuery, graphql } from 'gatsby'
 import SEO from '../components/SEO'
 // import Header from '../components/Header'
 // import Footer from '../components/Footer'
