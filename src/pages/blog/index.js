@@ -1,38 +1,70 @@
 import React from 'react'
+import { css, jsx } from '@emotion/core'
 import { Link, graphql } from 'gatsby'
 import SEO from '../../components/SEO'
 import Layout from '../../layouts/blog'
 
 const Blog = props => {
+  /** @jsx jsx */
   const blog = props.data.allMarkdownRemark.edges
   return (
     <Layout bodyClass="page-blog">
       <SEO title="Blog" />
-      <div className="intro">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h1>Blog</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container pb-6">
+      <div
+        css={css`
+          width: 100%;
+          max-width: 800px;
+          margin: 2rem auto 0 auto;
+          padding: 0 40px;
+        `}
+      >
         <div className="row">
           {blog.map(edge => (
             <div
               key={edge.node.frontmatter.path}
               className="col-12 col-md-4 mb-1"
             >
-              <div className="card service service-teaser">
-                <div className="card-content">
-                  <h2>
-                    <Link to={edge.node.frontmatter.path}>
+              <div className="card blog blog-teaser">
+                <div className="p-4"
+                  css={css`
+                    background-color: #f8fafc;
+                    border-radius: 6px;
+                  `}
+                >
+                  <h2
+                    css={css`
+                      padding: 2rem 0;
+                    `}
+                  >
+                    <Link
+                      to={edge.node.frontmatter.path}
+                      css={css`
+                        text-decoration: none;
+                        color: black;
+                        &:hover {
+                          opacity: 0.8;
+                        }
+                      `}
+                    >
                       {edge.node.frontmatter.title}
                     </Link>
                   </h2>
-                  <p>{edge.node.excerpt}</p>
+                  <p
+                    css={css`
+                      line-height: 1.7;
+                      margin-bottom: 2rem;
+                    `}
+                  >{edge.node.excerpt}</p>
+                  <Link
+                    css={css`
+                      text-decoration: none;
+                      &:hover {
+                        opacity: 0.8;
+                      }
+                    `}
+                  >
+                    Read more 👉
+                  </Link>
                 </div>
               </div>
             </div>

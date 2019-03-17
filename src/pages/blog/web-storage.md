@@ -9,7 +9,7 @@ draft: true
 
 ## The Web Storage API
 
-So while researching about this topic, which was requested by a friend of mine, I realized these two ways to store information are based on a central repo called web storage API.
+While researching about this topic, which was requested by a friend of mine, I realized these two ways to store information are based on a central repo called web storage API.
 
 This API provides the browser with a reasonable mechanism to store key-value pairs as described by MDN.
 

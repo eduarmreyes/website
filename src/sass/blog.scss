@@ -1,1 +1,7 @@
+@import 'fonts';
 @import 'tailwind';
+
+body,
+html {
+  font-family: 'Noto Sans', font-sans;
+}
