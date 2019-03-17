@@ -1,8 +1,9 @@
+@import 'fonts';
 @import 'tailwind';
 
 body,
 html {
-  @apply font-sans text-black;
+  font-family: 'Noto Sans', font-sans;
 }
 
 a.link {
