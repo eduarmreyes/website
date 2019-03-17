@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import SEO from '../../components/SEO'
-import Layout from '../../layouts/index'
+import Layout from '../../layouts/blog'
 
 const Blog = props => {
   const blog = props.data.allMarkdownRemark.edges

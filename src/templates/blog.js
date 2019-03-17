@@ -1,13 +1,13 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
-import Layout from '../layouts/index'
+import LayoutBlog from '../layouts/blog'
 
 const Blog = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
   return (
-    <Layout bodyClass="page-service">
+    <LayoutBlog bodyClass="page-service">
       <SEO title={title} />
       <div className="strip strip-white strip-diagonal">
         <div className="container pt-4 pt-md-10">
@@ -24,7 +24,7 @@ const Blog = ({ data }) => {
           </div>
         </div>
       </div>
-    </Layout>
+    </LayoutBlog>
   )
 }
 

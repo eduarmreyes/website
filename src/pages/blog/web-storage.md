@@ -2,7 +2,7 @@
 path: '/blog/how-a-web-developer-uses-storage-in-the-browser'
 title: 'How a web developer uses storage in the browser'
 date: 2019-03-12T16:39:15.311Z
-image: '/blog/default.png'
+image: '/blog/images/bleu-boi-769129-unsplash.jpg'
 featured: true
 draft: true
 ---
