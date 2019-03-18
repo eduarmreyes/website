@@ -25,7 +25,8 @@ const Blog = props => {
               className="col-12 col-md-4 mb-1"
             >
               <div className="card blog blog-teaser">
-                <div className="p-4"
+                <div
+                  className="p-4"
                   css={css`
                     background-color: #f8fafc;
                     border-radius: 6px;
@@ -54,10 +55,12 @@ const Blog = props => {
                       line-height: 1.7;
                       margin-bottom: 2rem;
                     `}
-                  >{edge.node.excerpt}</p>
+                  >
+                    {edge.node.excerpt}
+                  </p>
                   <Link
-                      to={edge.node.frontmatter.path}
-                      css={css`
+                    to={edge.node.frontmatter.path}
+                    css={css`
                       text-decoration: none;
                       &:hover {
                         opacity: 0.8;

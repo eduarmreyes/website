@@ -1,13 +1,11 @@
 import React from 'react'
 import { css, jsx } from '@emotion/core'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 // import PropTypes from 'prop-types'
 
 const HeaderBlog = () => (
   /** @jsx jsx */
-  <header
-    className="pt-6"
-  >
+  <header className="pt-6">
     <div
       css={css`
         width: 100%;
@@ -39,9 +37,7 @@ const HeaderBlog = () => (
             align-items-center
             "
         >
-          <Link to="/blog">
-            Blog
-          </Link>
+          <Link to="/blog">Blog</Link>
         </div>
       </nav>
     </div>

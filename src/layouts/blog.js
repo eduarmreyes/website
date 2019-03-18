@@ -8,8 +8,7 @@ import HeaderBlog from '../components/header-blog'
 // import MenuMobile from '../components/MenuMobile'
 import '../sass/blog.scss'
 
-const LayoutBlog
- = props => {
+const LayoutBlog = props => {
   return (
     <React.Fragment>
       <SEO />
@@ -26,4 +25,3 @@ const LayoutBlog
 }
 
 export default LayoutBlog
-
