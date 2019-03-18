@@ -56,7 +56,8 @@ const Blog = props => {
                     `}
                   >{edge.node.excerpt}</p>
                   <Link
-                    css={css`
+                      to={edge.node.frontmatter.path}
+                      css={css`
                       text-decoration: none;
                       &:hover {
                         opacity: 0.8;
