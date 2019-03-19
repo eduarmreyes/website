@@ -1,8 +1,7 @@
 import React from 'react'
 import Image from '../components/image'
-import PropTypes from 'prop-types'
 
-const AboutMe = ({ author, from, cta_text }) => (
+const AboutMe = () => (
   <section className="container mx-auto py-8 px-6">
     <div className="md:flex justify-center">
       <div className="my-photo w-full md:w-1/2">
@@ -65,13 +64,5 @@ const AboutMe = ({ author, from, cta_text }) => (
     </div>
   </section>
 )
-
-AboutMe.propTypes = {
-  author: PropTypes.string,
-}
-
-AboutMe.defaultProps = {
-  author: '',
-}
 
 export default AboutMe
