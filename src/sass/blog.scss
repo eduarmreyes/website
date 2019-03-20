@@ -6,7 +6,9 @@ html {
   font-family: 'Noto Sans', font-sans;
 }
 
-.container-sm {
-  max-width: 800px;
-  width: 100%;
+@media (min-width: 768px) {
+  .lg\:container-sm {
+    max-width: 768px;
+    width: 100%;
+  }
 }

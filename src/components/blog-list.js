@@ -5,7 +5,7 @@ import '../sass/blog.scss'
 const BlogList = ({ data }) => {
   const { edges: markdown } = data.allMarkdownRemark
   return (
-    <div className="container-sm mx-auto -mt-6 bg-white p-6 rounded shadow-lg">
+    <div className="mx-auto bg-white p-6 mt-0 rounded-none shadow-none lg:-mt-6 lg:rounded lg:shadow-lg lg:container-sm">
       <div className="row justify-content-start">
         <div className="mb-4">
           <h2 className="title-3 text-dark">Blogs</h2>
