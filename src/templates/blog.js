@@ -40,10 +40,12 @@ const Blog = ({ data }) => {
                       color: #f8fafc;
                       padding: 20px 0 20px 1rem;
                       margin: 1rem 0;
+                      overflow: auto;
                     }
                     & p {
                       line-height: 1.7;
                       text-align: left;
+                      overflow-wrap: break-word;
                     }
                   `}
                   dangerouslySetInnerHTML={{ __html: html }}
