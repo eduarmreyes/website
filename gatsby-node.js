@@ -19,6 +19,9 @@ exports.createPages = ({ graphql, actions }) => {
                     path
                     title
                     date(formatString: "DD MMMM YYYY")
+                    image
+                    draft
+                    featured
                   }
                   excerpt
                 }

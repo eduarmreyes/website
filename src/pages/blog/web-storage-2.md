@@ -1,15 +1,15 @@
 ---
-path: '/blog/how-a-web-developer-uses-storage-in-the-browser'
-title: 'How a web developer uses storage in the browser'
+path: '/blog/how-a-web-developer-uses-storage-in-the-browser-part-2'
+title: 'How a web developer uses storage in the browser part 2'
 date: 2019-03-12T16:39:15.311Z
-image: '/images/bleu-boi-769129-unsplash.jpg'
+image: '/images/gabriel-sollmann-704393-unsplash.jpg'
 featured: true
-draft: false
+draft: true
 ---
 
-## The Web Storage API
+## The Web Storage API Part 2
 
-While researching about this topic, which was requested by a friend of mine, I realized these two ways to store information are based on a central repo called web storage API.
+While sharing a little about The Web Storage API, we viewed .
 
 This API provides the browser with a reasonable mechanism to store key-value pairs as described by MDN.
 

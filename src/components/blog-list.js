@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
+import { StaticQuery, graphql, withPrefix, Link } from 'gatsby'
 import '../sass/blog.scss'
 
 const BlogList = ({ data }) => {
@@ -11,9 +11,16 @@ const BlogList = ({ data }) => {
           <h2 className="title-3 text-dark">Blogs</h2>
         </div>
         {markdown.map(edge => (
-          <div className="mb-3" key={edge.node.frontmatter.path}>
+          <div className="mb-4" key={edge.node.frontmatter.path}>
             <div className="card blog blog-teaser">
               <div className="card-content">
+                {edge.node.frontmatter.image && (
+                  <div
+                    className="feature-image mb-3"
+                  >
+                    <img src={edge.node.frontmatter.image} />
+                  </div>
+                )}
                 <h2 className="mb-2">
                   <Link
                     className="no-underline text-black hover:text-grey-darkest"
@@ -45,7 +52,12 @@ export default props => (
     query={graphql`
       query BlogListQuery {
         allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/blog/" } }
+          filter: {
+            fileAbsolutePath: { regex: "/blog/" }
+            frontmatter: {
+              draft: { eq: false }
+            }
+          }
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
           totalCount
@@ -55,6 +67,7 @@ export default props => (
               frontmatter {
                 title
                 path
+                image
               }
             }
           }
