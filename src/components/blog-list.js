@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticQuery, graphql, withPrefix, Link } from 'gatsby'
+import { StaticQuery, graphql, Link } from 'gatsby'
 import '../sass/blog.scss'
 
 const BlogList = ({ data }) => {
