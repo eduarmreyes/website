@@ -46,6 +46,10 @@ const Blog = ({ data }) => {
                       line-height: 1.7;
                       text-align: left;
                       overflow-wrap: break-word;
+                      margin-bottom: 1rem;
+                    }
+                    & ul {
+                      margin-bottom: 1rem;
                     }
                   `}
                   dangerouslySetInnerHTML={{ __html: html }}
