@@ -32,8 +32,32 @@ meaning it lets you store and retrieve objects that are indexed with a **key**.
 
 Have in mind this concepts:
 
-- You need to specify the database schema, open a connection to your DB and then retrieve and update data with **transactions**.
+- You need to specify the database schema, open a connection to your DB and then retrieve and update
+ data with **transactions**.
 - Combine IndexedDB for storing data offline with _Service Workers_.
 
-> **Note**: Like most web storage solutions, IndexedDB follows a _same origin policy_. So you cannot access stored data accross diferent domains.
+> **Note**: Like most web storage solutions, IndexedDB follows a _same origin policy_. So you cannot
+> access stored data accross diferent domains.
+
+#### Interfaces
+
+The API offers some interfaces to work with in order for us to interact with the DB properly and also
+it understands what we're trying to do with such objects.
+
+In order for us to connect to a DB we call the function `open()` on the `indexedDB` attribute of a
+`window` object, let me show you with a piece of code.
+
+```js
+// number one is the version, you can pass any other number
+// as parameter there to set your version
+window.indexedDB.open("NAME-OF-YOUR-DATABASE", 1);
+// var IDBOpenDBRequest = indexedDB.open(name);
+// var IDBOpenDBRequest = indexedDB.open(name, version);
+```
+
+#### Example of indexedDB
+
+Here we can see a example of a todo app using IndexedDB.
+
+http://mdn.github.io/to-do-notifications/
 

@@ -50,6 +50,7 @@ const Blog = ({ data }) => {
                     }
                     & ul {
                       margin-bottom: 1rem;
+                      line-height: 1.7;
                     }
                   `}
                   dangerouslySetInnerHTML={{ __html: html }}
