@@ -11,28 +11,28 @@ const BlogList = ({ data }) => {
           <h2 className="title-3 text-dark">Blogs</h2>
         </div>
         {markdown.map(edge => (
-          <div className="mb-4" key={edge.node.frontmatter.path}>
-            <div className="card blog blog-teaser">
-              <div className="card-content">
-                {edge.node.frontmatter.image && (
-                  <div
-                    className="feature-image mb-3"
-                  >
-                    <img src={edge.node.frontmatter.image} />
-                  </div>
-                )}
-                <h2 className="mb-2">
-                  <Link
-                    className="no-underline text-black hover:text-grey-darkest"
-                    to={edge.node.frontmatter.path}
-                  >
+          <Link
+            className="no-underline text-black hover:text-grey-darkest"
+            to={edge.node.frontmatter.path}
+          >
+            <div className="mb-4" key={edge.node.frontmatter.path}>
+              <div className="card blog blog-teaser">
+                <div className="card-content">
+                  {edge.node.frontmatter.image && (
+                    <div
+                      className="feature-image mb-3"
+                    >
+                      <img src={edge.node.frontmatter.image} />
+                    </div>
+                  )}
+                  <h2 className="mb-2">
                     {edge.node.frontmatter.title}
-                  </Link>
-                </h2>
-                <p className="leading-normal">{edge.node.excerpt}</p>
+                  </h2>
+                  <p className="leading-normal">{edge.node.excerpt}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
         <div className="mt-4">
           <Link
