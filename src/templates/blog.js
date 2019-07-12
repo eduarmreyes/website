@@ -6,7 +6,7 @@ import LayoutBlog from '../layouts/blog'
 
 const Blog = ({ data }) => {
   /** @jsx jsx */
-  const { title } = data.markdownRemark.frontmatter
+  const { title, image, thanks } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
   return (
     <LayoutBlog bodyClass="page-service">
@@ -25,6 +25,14 @@ const Blog = ({ data }) => {
             <div className="col-12 col-md-8">
               <div className="service service-single">
                 <h1 className="title mt-6 pt-6">{title}</h1>
+                <div className="feature-image mb-3 mt-3">
+                  <figure>
+                    <img src={image} />
+                    <figcaption className="text-sm leading-none text-grey-darkest">
+                      {thanks}
+                    </figcaption>
+                  </figure>
+                </div>
                 <div
                   className="content mt-6 pt-3"
                   css={css`
@@ -70,6 +78,8 @@ export const query = graphql`
       frontmatter {
         title
         path
+        image
+        thanks
       }
       html
     }

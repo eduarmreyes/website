@@ -10,8 +10,9 @@ const BlogList = ({ data }) => {
         <div className="mb-4">
           <h2 className="title-3 text-dark">Blogs</h2>
         </div>
-        {markdown.map(edge => (
+        {markdown.map((edge, index) => (
           <Link
+            key={index}
             className="no-underline text-black hover:text-grey-darkest"
             to={edge.node.frontmatter.path}
           >
