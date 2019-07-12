@@ -52,6 +52,7 @@ export default props => (
     query={graphql`
       query BlogListQuery {
         allMarkdownRemark(
+          limit: 5
           filter: {
             fileAbsolutePath: { regex: "/blog/" }
             frontmatter: {
