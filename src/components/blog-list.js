@@ -15,19 +15,23 @@ const BlogList = ({ data }) => {
             className="no-underline text-black hover:text-grey-darkest"
             to={edge.node.frontmatter.path}
           >
-            <div className="mb-4" key={edge.node.frontmatter.path}>
+            <div
+              className="mb-4 pb-2 border-b"
+              key={edge.node.frontmatter.path}
+            >
               <div className="card blog blog-teaser">
                 <div className="card-content">
                   {edge.node.frontmatter.image && (
-                    <div
-                      className="feature-image mb-3"
-                    >
-                      <img src={edge.node.frontmatter.image} />
+                    <div className="feature-image mb-3">
+                      <figure>
+                        <img src={edge.node.frontmatter.image} />
+                        <figcaption className="text-sm leading-none text-grey-darkest">
+                          {edge.node.frontmatter.thanks}
+                        </figcaption>
+                      </figure>
                     </div>
                   )}
-                  <h2 className="mb-2">
-                    {edge.node.frontmatter.title}
-                  </h2>
+                  <h2 className="mb-2">{edge.node.frontmatter.title}</h2>
                   <p className="leading-normal">{edge.node.excerpt}</p>
                 </div>
               </div>
@@ -55,9 +59,7 @@ export default props => (
           limit: 5
           filter: {
             fileAbsolutePath: { regex: "/blog/" }
-            frontmatter: {
-              draft: { eq: false }
-            }
+            frontmatter: { draft: { eq: false } }
           }
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
@@ -69,6 +71,7 @@ export default props => (
                 title
                 path
                 image
+                thanks
               }
             }
           }

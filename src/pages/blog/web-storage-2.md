@@ -5,6 +5,7 @@ date: 2019-03-21T16:39:15.311Z
 image: '/images/gabriel-sollmann-704393-unsplash.jpg'
 featured: true
 draft: false
+thanks: 'Photo by Gabriel Sollmann on Unsplash'
 ---
 
 ## The Web Storage API Part 2
@@ -60,4 +61,3 @@ window.indexedDB.open("NAME-OF-YOUR-DATABASE", 1);
 Here we can see a example of a todo app using IndexedDB.
 
 http://mdn.github.io/to-do-notifications/
-
