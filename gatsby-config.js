@@ -11,13 +11,13 @@ module.exports = {
         postCssPlugins: [require('tailwindcss')('./tailwind.js')],
       },
     },
-    { 
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
         develop: false, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
-      }
+      },
     },
     'gatsby-plugin-react-helmet',
     {
@@ -62,23 +62,24 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: "pages",
+        name: 'pages',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data`,
-        name: "data",
+        name: 'data',
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/images`,
-        name: "images",
+        name: 'images',
       },
     },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-netlify`,
   ],
 }
