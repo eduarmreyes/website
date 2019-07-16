@@ -1,8 +1,9 @@
 import React from 'react'
+import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import '../sass/blog.scss'
 
-const BlogList = ({ data }) => {
+export default function BlogList({ data }) {
   const { edges: markdown } = data.allMarkdownRemark
   return (
     <div className="mx-auto bg-white p-6 mt-0 rounded-none shadow-none lg:-mt-6 lg:rounded lg:shadow-lg lg:container-sm">
@@ -52,33 +53,32 @@ const BlogList = ({ data }) => {
   )
 }
 
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query BlogListQuery {
-        allMarkdownRemark(
-          limit: 5
-          filter: {
-            fileAbsolutePath: { regex: "/blog/" }
-            frontmatter: { draft: { eq: false } }
+export const pageQuery = graphql`
+  query BlogListQuery {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          excerpt(pruneLength: 300)
+          parent {
+            ... on File {
+              sourceInstanceName
+            }
           }
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
-          totalCount
-          edges {
-            node {
-              excerpt
-              frontmatter {
-                title
-                path
-                image
-                thanks
+          frontmatter {
+            title
+            path
+            image {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                }
               }
             }
+            thanks
           }
         }
       }
-    `}
-    render={data => <BlogList data={data} {...props} />}
-  />
-)
+    }
+  }
+`

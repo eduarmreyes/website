@@ -81,5 +81,20 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md', '.markdown'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              backgroundColor: '#fafafa',
+              maxWidth: 1035,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
