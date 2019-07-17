@@ -35,4 +35,3 @@ or recording and publishing the talks, here's the whole first day of RailsConf o
 
 [@dhh](https://twitter.com/dhh) talked about the paradigm of Open Source and Proprietary Software, a
 nice talk to get an idea of what is going on in terms of how Software is used in a culture.
-
