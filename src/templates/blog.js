@@ -1,14 +1,14 @@
-import React from 'react'
-import { css, jsx } from '@emotion/core'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import SEO from '../components/SEO'
-import LayoutBlog from '../layouts/blog'
+import React from 'react';
+import { css, jsx } from '@emotion/core';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import SEO from '../components/SEO';
+import LayoutBlog from '../layouts/blog';
 
 const Blog = ({ data }) => {
   /** @jsx jsx */
-  const { title, image, thanks } = data.markdownRemark.frontmatter
-  const { html } = data.markdownRemark
+  const { title, image, thanks } = data.markdownRemark.frontmatter;
+  const { html } = data.markdownRemark;
   return (
     <LayoutBlog bodyClass="page-service">
       <SEO title={title} />
@@ -70,8 +70,8 @@ const Blog = ({ data }) => {
         </div>
       </div>
     </LayoutBlog>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($id: String!) {
@@ -91,6 +91,6 @@ export const query = graphql`
       html
     }
   }
-`
+`;
 
-export default Blog
+export default Blog;

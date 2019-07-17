@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
 
 const Header = ({ author }) => (
   <header className="min-h-half-screen text-center bg-purple-darker border-t-6 border-blue-light flex items-center justify-center">
@@ -15,14 +15,14 @@ const Header = ({ author }) => (
       </p>
     </section>
   </header>
-)
+);
 
 Header.propTypes = {
   author: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   author: '',
-}
+};
 
-export default Header
+export default Header;

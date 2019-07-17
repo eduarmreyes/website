@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const WorkingProcess = ({ author, from, cta_text }) => (
   <section className="bg-grey-lightest">
@@ -37,14 +37,14 @@ const WorkingProcess = ({ author, from, cta_text }) => (
       </div>
     </div>
   </section>
-)
+);
 
 WorkingProcess.propTypes = {
   author: PropTypes.string,
-}
+};
 
 WorkingProcess.defaultProps = {
   author: '',
-}
+};
 
-export default WorkingProcess
+export default WorkingProcess;

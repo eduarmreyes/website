@@ -1,10 +1,10 @@
-import React from 'react'
-import Header from './header'
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import Header from './header';
+import Helmet from 'react-helmet';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-import '../sass/layout.scss'
+import '../sass/layout.scss';
 
 // document.addEventListener('touchstart', onTouchStart, {passive: true});
 
@@ -39,10 +39,10 @@ const Layout = ({ children }) => (
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

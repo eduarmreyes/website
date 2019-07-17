@@ -1,6 +1,6 @@
-import React from 'react'
-import { css, jsx } from '@emotion/core'
-import { Link } from 'gatsby'
+import React from 'react';
+import { css, jsx } from '@emotion/core';
+import { Link } from 'gatsby';
 // import PropTypes from 'prop-types'
 
 const HeaderBlog = () => (
@@ -42,6 +42,6 @@ const HeaderBlog = () => (
       </nav>
     </div>
   </header>
-)
+);
 
-export default HeaderBlog
+export default HeaderBlog;

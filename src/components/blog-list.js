@@ -1,10 +1,10 @@
-import React from 'react'
-import { StaticQuery, graphql, Link } from 'gatsby'
-import Img from 'gatsby-image'
-import '../sass/blog.scss'
+import React from 'react';
+import { StaticQuery, graphql, Link } from 'gatsby';
+import Img from 'gatsby-image';
+import '../sass/blog.scss';
 
 const BlogList = ({ data }) => {
-  const { edges: markdown } = data.allMarkdownRemark
+  const { edges: markdown } = data.allMarkdownRemark;
   return (
     <div className="mx-auto bg-white p-6 mt-0 rounded-none shadow-none lg:-mt-6 lg:rounded lg:shadow-lg lg:container-sm">
       <div className="row justify-content-start">
@@ -54,8 +54,8 @@ const BlogList = ({ data }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default props => (
   <StaticQuery
@@ -92,4 +92,4 @@ export default props => (
     `}
     render={data => <BlogList data={data} {...props} />}
   />
-)
+);

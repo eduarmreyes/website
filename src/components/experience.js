@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Experience = () => (
   <section className="bg-blue-lightest bg-el-salvador">
@@ -52,14 +52,14 @@ const Experience = () => (
       </code>
     </div>
   </section>
-)
+);
 
 Experience.propTypes = {
   author: PropTypes.string,
-}
+};
 
 Experience.defaultProps = {
   author: '',
-}
+};
 
-export default Experience
+export default Experience;
