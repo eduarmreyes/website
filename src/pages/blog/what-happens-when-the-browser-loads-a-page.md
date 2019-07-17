@@ -2,7 +2,7 @@
 path: '/blog/what-happens-when-the-browser-loads-a-page'
 title: 'What happens when the browser loads a page'
 date: 2019-07-12T14:25:20.972Z
-image: '/images/freestocks-org-pUvMN3j2kGc-unsplash.jpg'
+image: './images/freestocks-org-pUvMN3j2kGc-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by freestocks.org on Unsplash'

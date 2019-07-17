@@ -2,7 +2,7 @@
 path: '/blog/the-flux-model'
 title: 'I explain what the flux model is'
 date: 2019-07-12T12:26:11.379Z
-image: '/images/bernard-hermant-TRECMhsAvIw-unsplash.jpg'
+image: './images/bernard-hermant-TRECMhsAvIw-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Bernard Hermant on Unsplash'

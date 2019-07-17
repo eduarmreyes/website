@@ -27,7 +27,7 @@ const Blog = ({ data }) => {
                 <h1 className="title mt-6 pt-6">{title}</h1>
                 <div className="feature-image mb-3 mt-3">
                   <figure>
-                    <img src={image} alt={title} />
+                    {/* <Img src={image} alt={title} /> */}
                     <figcaption className="text-sm leading-none text-grey-darkest">
                       {thanks}
                     </figcaption>
@@ -78,7 +78,6 @@ export const query = graphql`
       frontmatter {
         title
         path
-        image
         thanks
       }
       html

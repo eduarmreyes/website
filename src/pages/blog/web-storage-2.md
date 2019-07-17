@@ -2,7 +2,7 @@
 path: '/blog/how-a-web-developer-uses-storage-in-the-browser-part-2'
 title: 'How a web developer uses storage in the browser part 2'
 date: 2019-03-21T16:39:15.311Z
-image: '/images/gabriel-sollmann-704393-unsplash.jpg'
+image: './images/gabriel-sollmann-704393-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Gabriel Sollmann on Unsplash'

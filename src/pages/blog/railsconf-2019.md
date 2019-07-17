@@ -2,7 +2,7 @@
 path: '/blog/@eduarmreyes-at-railsconf-2019'
 title: 'I am at the RailsConf 2019'
 date: 2019-04-30T13:56:16.895Z
-image: '/images/jacob-weinzettel-465077-unsplash.jpg'
+image: './images/jacob-weinzettel-465077-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Jacob Weinzettel on Unsplash'

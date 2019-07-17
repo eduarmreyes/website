@@ -1,5 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
 import '../sass/blog.scss'
 
 const BlogList = ({ data }) => {
@@ -25,7 +26,11 @@ const BlogList = ({ data }) => {
                   {edge.node.frontmatter.image && (
                     <div className="feature-image mb-3">
                       <figure>
-                        <img src={edge.node.frontmatter.image} />
+                        <Img
+                          fluid={
+                            edge.node.frontmatter.image.childImageSharp.fluid
+                          }
+                        />
                         <figcaption className="text-sm leading-none text-grey-darkest">
                           {edge.node.frontmatter.thanks}
                         </figcaption>
@@ -71,7 +76,13 @@ export default props => (
               frontmatter {
                 title
                 path
-                image
+                image {
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
+                    }
+                  }
+                }
                 thanks
               }
             }
