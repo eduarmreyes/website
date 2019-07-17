@@ -1,6 +1,7 @@
 import React from 'react'
 import { css, jsx } from '@emotion/core'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import SEO from '../components/SEO'
 import LayoutBlog from '../layouts/blog'
 
@@ -27,7 +28,7 @@ const Blog = ({ data }) => {
                 <h1 className="title mt-6 pt-6">{title}</h1>
                 <div className="feature-image mb-3 mt-3">
                   <figure>
-                    {/* <Img src={image} alt={title} /> */}
+                    <Img fluid={image.childImageSharp.fluid} alt={title} />
                     <figcaption className="text-sm leading-none text-grey-darkest">
                       {thanks}
                     </figcaption>
@@ -78,6 +79,13 @@ export const query = graphql`
       frontmatter {
         title
         path
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
         thanks
       }
       html
