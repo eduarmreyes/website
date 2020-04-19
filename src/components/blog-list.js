@@ -31,13 +31,13 @@ const BlogList = ({ data }) => {
                             edge.node.frontmatter.image.childImageSharp.fluid
                           }
                         />
-                        <figcaption className="text-sm leading-none text-grey-darkest">
+                        <figcaption className="pt-2 text-sm leading-none text-grey-darkest">
                           {edge.node.frontmatter.thanks}
                         </figcaption>
                       </figure>
                     </div>
                   )}
-                  <h2 className="mb-2">{edge.node.frontmatter.title}</h2>
+                  <h2 className="pb-2">{edge.node.frontmatter.title}</h2>
                   <p className="leading-normal">{edge.node.excerpt}</p>
                 </div>
               </div>

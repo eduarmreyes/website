@@ -1,12 +1,12 @@
-import React from 'react'
-import { css, jsx } from '@emotion/core'
-import { Link, graphql } from 'gatsby'
-import SEO from '../../components/SEO'
-import Layout from '../../layouts/blog'
+import React from 'react';
+import { css, jsx } from '@emotion/core';
+import { Link, graphql } from 'gatsby';
+import SEO from '../../components/SEO';
+import Layout from '../../layouts/blog';
 
 const Blog = props => {
   /** @jsx jsx */
-  const blog = props.data.allMarkdownRemark.edges
+  const blog = props.data.allMarkdownRemark.edges;
   return (
     <Layout bodyClass="page-blog">
       <SEO title="Blog" />
@@ -76,8 +76,8 @@ const Blog = props => {
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query BlogQuery {
@@ -96,6 +96,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default Blog
+export default Blog;

@@ -17,19 +17,30 @@ const Blog = ({ data }) => {
           className="pt-6 pt-md-10 m-auto"
           css={css`
             width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
             padding: 0 40px;
           `}
         >
           <div className="row justify-content-start">
             <div className="col-12 col-md-8">
               <div className="service service-single">
-                <h1 className="title mt-6 pt-6">{title}</h1>
-                <div className="feature-image mb-3 mt-3">
+                <div
+                  css={css`
+                    max-width: 800px;
+                    margin: 0 auto;
+                  `}
+                >
+                  <h1 className="title mt-6 pt-6 pb-3">{title}</h1>
+                </div>
+                <div
+                  className="feature-image mb-3 mt-3"
+                  css={css`
+                    max-width: 900px;
+                    margin: 0 auto;
+                  `}
+                >
                   <figure>
                     <Img fluid={image.childImageSharp.fluid} alt={title} />
-                    <figcaption className="text-sm leading-none text-grey-darkest">
+                    <figcaption className="mt-3 text-sm leading-none text-grey-darkest">
                       {thanks}
                     </figcaption>
                   </figure>
@@ -37,6 +48,8 @@ const Blog = ({ data }) => {
                 <div
                   className="content mt-6 pt-3"
                   css={css`
+                    max-width: 800px;
+                    margin: 0 auto;
                     & h1,
                     & h2,
                     & h3,
