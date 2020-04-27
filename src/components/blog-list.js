@@ -9,7 +9,12 @@ const BlogList = ({ data }) => {
     <div className="mx-auto bg-white p-6 mt-0 rounded-none shadow-none lg:-mt-6 lg:rounded lg:shadow-lg lg:container-sm">
       <div className="row justify-content-start">
         <div className="mb-4">
-          <h2 className="title-3 text-dark">Blogs</h2>
+        <Link
+            className="no-underline text-blue-darker hover:text-blue"
+            to="/blog"
+          >
+          <h2 className="title-3 text">Blogs</h2>
+          </Link>
         </div>
         {markdown.map((edge, index) => (
           <Link
@@ -62,12 +67,12 @@ export default props => (
     query={graphql`
       query BlogListQuery {
         allMarkdownRemark(
-          limit: 5
           filter: {
             fileAbsolutePath: { regex: "/blog/" }
-            frontmatter: { draft: { eq: false } }
+            frontmatter: { draft: { eq: false }, featured: { eq: true } }
           }
           sort: { fields: [frontmatter___date], order: DESC }
+          limit: 5
         ) {
           totalCount
           edges {

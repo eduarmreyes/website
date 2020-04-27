@@ -8,6 +8,7 @@ import LayoutBlog from '../layouts/blog';
 const Blog = ({ data }) => {
   /** @jsx jsx */
   const { title, image, thanks } = data.markdownRemark.frontmatter;
+  console.log('image', image);
   const { html } = data.markdownRemark;
   return (
     <LayoutBlog bodyClass="page-service">
@@ -27,6 +28,8 @@ const Blog = ({ data }) => {
                   css={css`
                     max-width: 800px;
                     margin: 0 auto;
+                    padding: 0 120px;
+                    text-align: center;
                   `}
                 >
                   <h1 className="title mt-6 pt-6 pb-3">{title}</h1>
@@ -39,8 +42,18 @@ const Blog = ({ data }) => {
                   `}
                 >
                   <figure>
-                    <Img fluid={image.childImageSharp.fluid} alt={title} />
-                    <figcaption className="mt-3 text-sm leading-none text-grey-darkest">
+                    <Img
+                      className="mb-2"
+                      fluid={image.childImageSharp.fluid}
+                      alt={title}
+                    />
+                    <figcaption
+                      className="text-sm leading-none text-grey-darkest"
+                      css={css`
+                        max-width: 800px;
+                        margin: auto;
+                      `}
+                    >
                       {thanks}
                     </figcaption>
                   </figure>
