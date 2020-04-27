@@ -1,19 +1,40 @@
 import React from 'react';
+import { css, jsx } from '@emotion/core';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import '../sass/blog.scss';
 
 const BlogList = ({ data }) => {
+  /** @jsx jsx */
+
   const { edges: markdown } = data.allMarkdownRemark;
   return (
     <div className="mx-auto bg-white p-6 mt-0 rounded-none shadow-none lg:-mt-6 lg:rounded lg:shadow-lg lg:container-sm">
       <div className="row justify-content-start">
         <div className="mb-4">
-        <Link
+          <Link
             className="no-underline text-blue-darker hover:text-blue"
             to="/blog"
           >
-          <h2 className="title-3 text">Blogs</h2>
+            <h2
+              className="title-3 text"
+              css={css`
+                position: relative;
+
+                &&::before {
+                  content: '';
+                  opacity: 0.2;
+                  background-color: #273096;
+                  position: absolute;
+                  bottom: 0;
+                  width: 75px;
+                  height: 8px;
+                  transform: scaleX(1.3);
+                }
+              `}
+            >
+              Blogs
+            </h2>
           </Link>
         </div>
         {markdown.map((edge, index) => (
