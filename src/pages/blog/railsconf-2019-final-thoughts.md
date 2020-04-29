@@ -3,7 +3,7 @@ path: '/blog/@eduarmreyes-at-railsconf-2019-my-thoughts'
 title: 'My thoughts about RailsConf 2019'
 date: 2019-05-05T14:32:32.779Z
 image: './images/freestocks-org-139132-unsplash.jpg'
-featured: true
+featured: false
 draft: false
 thanks: 'Photo by freestocks.org on Unsplash'
 ---

@@ -15,7 +15,7 @@ want to open the console developer and then run `node` on your terminal
 (because you had it open anyways), run the code you wanted and then you start
 trying to escape that prison, well this is my history when I tried to do it.
 
-```console
+```bash
 ➜ node                                                     
 > const d = new Date()
 undefined
