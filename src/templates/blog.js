@@ -87,6 +87,10 @@ const Blog = ({ data }) => {
                       margin-bottom: 1rem;
                       line-height: 1.7;
                     }
+                    & pre,
+                    & code {
+                      font-family: 'Fira Code';
+                    }
                   `}
                   dangerouslySetInnerHTML={{ __html: html }}
                 />
