@@ -30,6 +30,11 @@ const BlogList = ({ data }) => {
                   width: 75px;
                   height: 8px;
                   transform: scaleX(1.3);
+                  transition: height 0.2s ease-out;
+                }
+
+                &&:hover&&::before {
+                  height: 24px;
                 }
               `}
             >
@@ -45,6 +50,11 @@ const BlogList = ({ data }) => {
           >
             <div
               className="mb-4 pb-2 border-b"
+              css={css`
+                :hover {
+                  outline: 8px solid #6cb2eb;
+                }
+              `}
               key={edge.node.frontmatter.path}
             >
               <div className="card blog blog-teaser">
