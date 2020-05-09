@@ -1,8 +1,8 @@
 import React from 'react';
 import { css, jsx } from '@emotion/core';
 import { Link, graphql } from 'gatsby';
-import SEO from '../../components/SEO';
-import Layout from '../../layouts/blog';
+import SEO from 'components/SEO';
+import Layout from 'layouts/blog';
 
 const Blog = props => {
   /** @jsx jsx */

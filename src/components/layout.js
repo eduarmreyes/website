@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-import '../sass/layout.scss';
+import 'sass/layout.scss';
 
 // document.addEventListener('touchstart', onTouchStart, {passive: true});
 

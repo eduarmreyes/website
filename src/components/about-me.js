@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../components/image';
+import Image from 'components/image';
 
 const AboutMe = () => (
   <section className="container mx-auto py-8 px-6">

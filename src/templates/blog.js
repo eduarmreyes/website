@@ -2,8 +2,8 @@ import React from 'react';
 import { css, jsx } from '@emotion/core';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import SEO from '../components/SEO';
-import LayoutBlog from '../layouts/blog';
+import SEO from 'components/SEO';
+import LayoutBlog from 'layouts/blog';
 
 const Blog = ({ data }) => {
   /** @jsx jsx */

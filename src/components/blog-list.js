@@ -2,7 +2,7 @@ import React from 'react';
 import { css, jsx } from '@emotion/core';
 import { StaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import '../sass/blog.scss';
+import 'sass/blog.scss';
 
 const BlogList = ({ data }) => {
   /** @jsx jsx */
