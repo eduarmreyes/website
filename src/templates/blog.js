@@ -28,7 +28,6 @@ const Blog = ({ data }) => {
                   css={css`
                     max-width: 800px;
                     margin: 0 auto;
-                    padding: 0 120px;
                     text-align: center;
                   `}
                 >
