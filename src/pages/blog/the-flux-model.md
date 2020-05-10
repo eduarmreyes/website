@@ -6,6 +6,7 @@ image: './images/bernard-hermant-TRECMhsAvIw-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Bernard Hermant on Unsplash'
+reading_time: '1 min 40 sec'
 ---
 
 ## Context
@@ -14,7 +15,7 @@ I have been recently contributing to the codebase of GitLab where I noticed that
 
 The flux model is a clever way to control the flow inside the web applications we create nowadays, for instance, back in the day when MVC was king of web development, we have a big problem to solve because this pattern did not scale well-enough with the changes in the codebase and the heavy interaction web applications have now.
 
-Where the flux pattern shines the most is when an application utilizes a unidirectional data flow, in order for this to happen, flux introduced these core concepts:
+Where the flux pattern shines the most is when an application utilizes a unidirectional data flow, for this to happen, flux introduced these core concepts:
 
 - Dispatchers
 - Store
@@ -43,5 +44,5 @@ The flux model allows developers to have a single source of truth for the data u
 
 In VueX all actions that mutate the store’s data are put inside the store itself, adopting this pattern makes easier for developers to understand what type of mutation the data is likely to have and how it was triggered, therefore, debugging is not a nightmare anymore because when something goes south it is possible to know the trace log of what happened in the store.
 
-In addition to that, VueX allows every component to have its own private state.
+In addition to that, VueX allows every component to have its private state.
 This makes testing a lot easier because you can threat components individually in terms of state management, but they are also connected by the store all components share.

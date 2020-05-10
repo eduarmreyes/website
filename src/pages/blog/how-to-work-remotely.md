@@ -6,6 +6,7 @@ image: './images/annie-spratt-nXDXrhrO7hA-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Annie Spratt on Unsplash'
+reading_time: '2 min 32 sec'
 ---
 
 ## My experience in the tech industry from El Salvador and within the US

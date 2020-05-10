@@ -6,11 +6,12 @@ image: './images/bleu-boi-769129-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Bleu on Unsplash'
+reading_time: '1 min 42 sec'
 ---
 
 ## The Web Storage API
 
-While researching about this topic, which was requested by a friend of mine, I realized these two ways to store information are based on a central repo called web storage API.
+While researching this topic, which was requested by a friend of mine, I realized these two ways to store the information are based on a central repo called web storage API.
 
 This API provides the browser with a reasonable mechanism to store key-value pairs as described by MDN.
 
@@ -18,7 +19,7 @@ This API provides the browser with a reasonable mechanism to store key-value pai
 
 ### Window.localStorage
 
-This mechanism is read-only and allows us developers to access a Storage object for the Document’s origin; the stored data is saved across browser sessions, this data stored has no expiration time, it gets cleared when the page session ends -- that is, when the page is closed.
+This mechanism is read-only and allows us, developers, to access a Storage object for the Document’s origin; the stored data is saved across browser sessions, this data stored has no expiration time, it gets cleared when the page session ends -- that is, when the page is closed.
 
 #### Syntax
 ```js
@@ -32,7 +33,7 @@ This following piece of code accesses the current domain’s local Storage objec
 localStorage.setItem(“myFavoriteBook”, “Thr3s”);
 ```
 
-In order for you to read it, you can do it as follows:
+For you to read it, you can do it as follows:
 
 ```js
 let book = localStorage.getItem(“myFavoriteBook”);
@@ -50,7 +51,7 @@ We also have a way to clear all the localStorage items like so:
 localStorage.clear();
 ```
 
-You can see the browser compatibiliy in this link: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage#Browser_compatibility
+You can see the browser compatibility in this link: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage#Browser_compatibility
 
 ### Window.sessionStorage
 Storage has another mechanism to store information into a current domain, this is sessionStorage, this property allows you to access a session Storage object to the current origin. A page session lasts for as long as the browser is open and survives over page reloads and restores. Opening a page in a new tab or window will cause a new session to be initiated with the value of the top-level browsing context, which differs from how session cookies work.

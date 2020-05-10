@@ -7,7 +7,12 @@ import LayoutBlog from 'layouts/blog';
 
 const Blog = ({ data }) => {
   /** @jsx jsx */
-  const { title, image, thanks } = data.markdownRemark.frontmatter;
+  const {
+    title,
+    image,
+    thanks,
+    reading_time = null,
+  } = data.markdownRemark.frontmatter;
   console.log('image', image);
   const { html } = data.markdownRemark;
   return (
@@ -56,6 +61,18 @@ const Blog = ({ data }) => {
                       {thanks}
                     </figcaption>
                   </figure>
+                  {reading_time && (
+                    <div
+                      className="text leading-none text-purple pt-5"
+                      css={css`
+                        max-width: 800px;
+                        margin: auto;
+                      `}
+                    >
+                      <span className="text-purple-dark">{`${reading_time}`}</span>{' '}
+                      reading time ⏲
+                    </div>
+                  )}
                 </div>
                 <div
                   className="content mt-6 pt-3"
@@ -116,6 +133,7 @@ export const query = graphql`
           }
         }
         thanks
+        reading_time
       }
       html
     }

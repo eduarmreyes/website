@@ -6,6 +6,7 @@ image: './images/jacob-weinzettel-465077-unsplash.jpg'
 featured: false
 draft: false
 thanks: 'Photo by Jacob Weinzettel on Unsplash'
+reading_time: '20 sec'
 ---
 
 ## I am at the RailsConf 2019
@@ -13,7 +14,7 @@ thanks: 'Photo by Jacob Weinzettel on Unsplash'
 Hi all, thanks to my employer https://webrtc.ventures, I am at the RailsConf 2019 in
 Minneapolis, looking forward to learn all I can while meeting absolutely amazing people.
 
-If you are interested in following along, here's the link for the livestream: 
+If you are interested in following along, here's the link for the livestream:
 https://www.youtube.com/watch?v=1JOA6pUwgBw
 
 ## If you are coming

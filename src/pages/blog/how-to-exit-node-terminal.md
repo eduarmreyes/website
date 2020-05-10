@@ -6,6 +6,7 @@ image: './images/phil-botha-20VfF_v0GZY-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Phil Botha on Unsplash'
+reading_time: '44 sec'
 ---
 
 ## What to do?
@@ -16,7 +17,7 @@ want to open the console developer and then run `node` on your terminal
 trying to escape that prison, well this is my history when I tried to do it.
 
 ```bash
-➜ node                                                     
+➜ node
 > const d = new Date()
 undefined
 > d.now()
@@ -50,6 +51,6 @@ There you go, you can exit node console by doing one of the following:
 - `.exit` 👈 this is is pretty cool
 - `process.exit()`
 - `process.kill(process.pid)`
-  - You can also run `process.kill(process.pid, 'SIGTERM')`, this is to send 
+  - You can also run `process.kill(process.pid, 'SIGTERM')`, this is to send
   the signal to the process you can capture that signal and do something about it
 - Press Ctrl + C twice

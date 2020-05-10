@@ -6,6 +6,7 @@ image: './images/gabriel-sollmann-704393-unsplash.jpg'
 featured: true
 draft: false
 thanks: 'Photo by Gabriel Sollmann on Unsplash'
+reading_time: '1 min 14 sec'
 ---
 
 ## The Web Storage API Part 2
@@ -16,13 +17,13 @@ found out that there are some other options to store data in your browser.
 - IndexedDB
 - Web SQL
 
-In this article we will cover the research done to understand these two other options to store
+In this article, we will cover the research done to understand these two other options to store
 data using our browser.
 
 ### IndexedDB
 
-There are times when developers need to store rather large amount of structured data such as
-files/blobs. The fact that this can be done for a client-side storage is blowing my mind right now.
+There are times when developers need to store a rather large amount of structured data such as
+files/blobs. The fact that this can be done for client-side storage is blowing my mind right now.
 
 > This feature is available in Web Workers.
 
@@ -31,21 +32,20 @@ files/blobs. The fact that this can be done for a client-side storage is blowing
 IndexedDB is both a transactional database system and a JavaScript-based object-oriented database,
 meaning it lets you store and retrieve objects that are indexed with a **key**.
 
-Have in mind this concepts:
+Have in mind these concepts:
 
-- You need to specify the database schema, open a connection to your DB and then retrieve and update
- data with **transactions**.
+- You need to specify the database schema, open a connection to your DB, and then retrieve and update data with **transactions**.
 - Combine IndexedDB for storing data offline with _Service Workers_.
 
 > **Note**: Like most web storage solutions, IndexedDB follows a _same origin policy_. So you cannot
-> access stored data accross diferent domains.
+> access stored data across different domains.
 
 #### Interfaces
 
-The API offers some interfaces to work with in order for us to interact with the DB properly and also
+The API offers some interfaces to work with for us to interact with the DB properly and also
 it understands what we're trying to do with such objects.
 
-In order for us to connect to a DB we call the function `open()` on the `indexedDB` attribute of a
+For us to connect to a DB we call the function `open()` on the `indexedDB` attribute of a
 `window` object, let me show you with a piece of code.
 
 ```js
@@ -58,6 +58,6 @@ window.indexedDB.open("NAME-OF-YOUR-DATABASE", 1);
 
 #### Example of indexedDB
 
-Here we can see a example of a todo app using IndexedDB.
+Here we can see an example of a todo app using IndexedDB.
 
 http://mdn.github.io/to-do-notifications/
