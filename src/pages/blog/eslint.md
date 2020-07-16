@@ -2,10 +2,10 @@
 path: '/blog/eslint'
 title: 'Eslint fix my mistakes, thank you ✌'
 date: 2020-07-16T05:46:07.269Z
-image: './images/'
+image: './images/james-pond-1qkyck-UL3g-unsplash.jpg'
 featured: true
 draft: true
-thanks: ''
+thanks: 'Photo by James Pond on Unsplash'
 reading_time: ''
 ---
 
