@@ -34,4 +34,8 @@ apps to look like and I successfully push these kind of small but noticeable
 changes within the team I work with.
 
 All of this made me realize that I like to work on the parts of the web app that
-was
+was user facing, back in the day there was no such thing as "I work in the Front
+End or I work in the Back End"; it was always the same project folder and
+everything was in it. Which had its pros and cons, of course.
+
+

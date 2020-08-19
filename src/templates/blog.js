@@ -13,7 +13,6 @@ const Blog = ({ data }) => {
     thanks,
     reading_time = null,
   } = data.markdownRemark.frontmatter;
-  console.log('image', image);
   const { html } = data.markdownRemark;
   return (
     <LayoutBlog bodyClass="page-service">
